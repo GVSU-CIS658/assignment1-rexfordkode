@@ -99,3 +99,14 @@ a:hover {
     border-bottom-color: var(--color-accent-2);
     text-shadow: 0 2px 10px rgba(233, 69, 96, 0.3);
 }
+
+/* ===== MAIN GRID LAYOUT ===== */
+#css-zen-garden {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--space-5);
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: var(--space-4);
+    min-height: 100vh;
+}
