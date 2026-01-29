@@ -338,6 +338,39 @@ a:hover {
     font-size: 0.9rem;
 }
 
+/* ===== FOOTER ===== */
+footer {
+    grid-area: footer;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    padding: var(--space-4);
+    background: linear-gradient(135deg, rgba(16, 213, 235, 0.08) 0%, rgba(233, 69, 96, 0.08) 100%);
+    border-radius: var(--radius-md);
+    grid-column: 1 / -1;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(16, 213, 235, 0.2);
+}
+
+footer a {
+    padding: var(--space-2) var(--space-3);
+    background: linear-gradient(135deg, var(--color-accent) 0%, #00b4db 100%);
+    color: #0a0a0a;
+    border-radius: var(--radius-sm);
+    border: none;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    font-weight: 600;
+    box-shadow: 0 4px 15px rgba(16, 213, 235, 0.3);
+}
+
+footer a:hover {
+    background: linear-gradient(135deg, #e94560 0%, #ff6b35 100%);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 25px rgba(233, 69, 96, 0.4);
+}
+
 /* ===== RESPONSIVE GRID - TABLET ===== */
 @media (min-width: 768px) {
     #css-zen-garden {
