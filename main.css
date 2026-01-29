@@ -1,4 +1,4 @@
-/* ===== RESET & BASE STYLES ===== */
+/*  RESET & BASE STYLES  */
 * {
     margin: 0;
     padding: 0;
@@ -64,8 +64,11 @@ html {
 
 body {
     color: var(--color-text);
-    background: var(--color-bg-grad);
-    background-attachment: fixed;
+    background: var(--color-bg-grad), url('snow-2620.gif');
+    background-attachment: fixed, fixed;
+    background-size: cover, cover;
+    background-position: center, center;
+    background-blend-mode: overlay;
     font: 90% var(--font-body);
     font-size: var(--fs-body);
     line-height: var(--lh-body);
@@ -100,7 +103,7 @@ a:hover {
     text-shadow: 0 2px 10px rgba(233, 69, 96, 0.3);
 }
 
-/* ===== MAIN GRID LAYOUT ===== */
+/*  MAIN GRID LAYOUT  */
 #css-zen-garden {
     display: grid;
     grid-template-columns: 1fr;
@@ -122,7 +125,7 @@ a:hover {
         "footer";
 }
 
-/* ===== HEADER/INTRO SECTION ===== */
+/*  HEADER/INTRO SECTION  */
 .intro {
     grid-area: intro;
     background: var(--color-intro-grad);
@@ -191,7 +194,7 @@ a:hover {
     text-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
 }
 
-/* ===== MAIN CONTENT FLEXBOX WRAPPER ===== */
+/*  MAIN CONTENT FLEXBOX WRAPPER  */
 .main {
     grid-area: main;
     display: flex;
@@ -205,7 +208,7 @@ a:hover {
     gap: var(--space-4);
 }
 
-/* ===== ARTICLE CARDS ===== */
+/*  ARTICLE CARDS  */
 .main .explanation,
 .main .participation,
 .main .benefits,
@@ -257,7 +260,7 @@ a:hover {
     margin-bottom: 0;
 }
 
-/* ===== SIDEBAR LAYOUT ===== */
+/*  SIDEBAR LAYOUT  */
 .sidebar {
     grid-area: sidebar;
     background: linear-gradient(135deg, rgba(255, 255, 255, 0.98) 0%, rgba(255, 255, 255, 0.95) 100%);
@@ -298,7 +301,7 @@ a:hover {
     font-family: var(--font-heading);
 }
 
-/* ===== NAVIGATION FLEXBOX ===== */
+/*  NAVIGATION FLEXBOX  */
 .sidebar nav ul {
     list-style: none;
     display: flex;
@@ -338,7 +341,7 @@ a:hover {
     font-size: 0.9rem;
 }
 
-/* ===== FOOTER ===== */
+/*  FOOTER  */
 footer {
     grid-area: footer;
     display: flex;
@@ -371,7 +374,7 @@ footer a:hover {
     box-shadow: 0 6px 25px rgba(233, 69, 96, 0.4);
 }
 
-/* ===== RESPONSIVE GRID - TABLET ===== */
+/*  RESPONSIVE GRID - TABLET  */
 @media (min-width: 768px) {
     #css-zen-garden {
         padding: var(--space-4);
@@ -408,7 +411,7 @@ footer a:hover {
     }
 }
 
-/* ===== RESPONSIVE GRID - DESKTOP ===== */
+/*  RESPONSIVE GRID - DESKTOP  */
 @media (min-width: 1024px) {
     #css-zen-garden {
         padding: var(--space-6);
