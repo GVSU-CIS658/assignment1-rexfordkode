@@ -45,7 +45,7 @@
     --fs-h3: 1.35rem;
     --lh-body: 1.7;
     --lh-heading: 1.2;
-    
+
     /* Component Variables */
     --card-padding: var(--space-5);
     --card-radius: var(--radius-md);
@@ -70,4 +70,18 @@ body {
     font-size: var(--fs-body);
     line-height: var(--lh-body);
     min-height: 100vh;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: Luminari, 'Stencil Std', fantasy;
+    font-weight: 700;
+    margin-bottom: var(--space-2);
+    letter-spacing: -0.5px;
+    line-height: var(--lh-heading);
+}
+
+p {
+    margin-bottom: var(--space-2);
+    line-height: var(--lh-body);
+    font-family: var(--font-body);
 }
