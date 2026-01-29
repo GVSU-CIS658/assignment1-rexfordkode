@@ -56,3 +56,18 @@
     --sidebar-w-tablet: 320px;
     --sidebar-w-desktop: 340px;
 }
+
+html {
+    font-size: 16px;
+    scroll-behavior: smooth;
+}
+
+body {
+    color: var(--color-text);
+    background: var(--color-bg-grad);
+    background-attachment: fixed;
+    font: 90% var(--font-body);
+    font-size: var(--fs-body);
+    line-height: var(--lh-body);
+    min-height: 100vh;
+}
