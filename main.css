@@ -407,3 +407,44 @@ footer a:hover {
         grid-area: footer;
     }
 }
+
+/* ===== RESPONSIVE GRID - DESKTOP ===== */
+@media (min-width: 1024px) {
+    #css-zen-garden {
+        padding: var(--space-6);
+        gap: var(--space-6);
+    }
+
+    .page-wrapper {
+        gap: var(--space-6);
+        grid-template-columns: var(--sidebar-w-desktop) 1fr;
+    }
+
+    .intro {
+        padding: calc(var(--space-6) + var(--space-2));
+    }
+
+    .intro h1 {
+        font-size: 3.2rem;
+    }
+
+    .intro h2 {
+        font-size: 1.75rem;
+    }
+
+    .main .explanation,
+    .main .participation,
+    .main .benefits,
+    .main .requirements {
+        padding: 3rem;
+    }
+
+    .sidebar {
+        padding: 3rem;
+        top: 3rem;
+    }
+
+    .sidebar .wrapper {
+        gap: 3rem;
+    }
+}
