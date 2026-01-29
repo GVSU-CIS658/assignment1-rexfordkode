@@ -121,3 +121,40 @@ a:hover {
         "sidebar"
         "footer";
 }
+
+/* ===== RESPONSIVE GRID - TABLET ===== */
+@media (min-width: 768px) {
+    #css-zen-garden {
+        padding: var(--space-4);
+    }
+
+    .page-wrapper {
+        grid-template-columns: var(--sidebar-w-tablet) 1fr;
+        gap: var(--space-5);
+        grid-template-areas:
+            "sidebar intro"
+            "sidebar main"
+            "sidebar footer";
+    }
+
+    .intro {
+        grid-area: intro;
+    }
+
+    .main {
+        grid-area: main;
+    }
+
+    .sidebar {
+        grid-area: sidebar;
+        position: sticky;
+        top: 2rem;
+        height: fit-content;
+        max-height: calc(100vh - 4rem);
+        overflow-y: auto;
+    }
+
+    footer {
+        grid-area: footer;
+    }
+}
