@@ -76,7 +76,7 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: Luminari, 'Stencil Std', fantasy;
+    font-family: Arsilon, 'Stencil Std', fantasy;
     font-weight: 700;
     margin-bottom: var(--space-2);
     letter-spacing: -0.5px;
